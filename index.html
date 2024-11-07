@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CRUD Application</h1>
+
+    <!-- Create Section -->
+    <section>
+        <h2>Create Item</h2>
+        <input type="text" id="createName" placeholder="Enter name">
+        <input type="text" id="createDescription" placeholder="Enter description">
+        <button onclick="createItem()">Create</button>
+    </section>
+
+    <!-- Read Section -->
+    <section>
+        <h2>Items List</h2>
+        <p id="emptyList"></p>
+        <ul id="itemList"></ul>
+    </section>
+
+    <!-- Update Section -->
+    <section>
+        <h2>Update Item</h2>
+        <input type="number" id="updateId" placeholder="Enter item ID">
+        <input type="text" id="updateName" placeholder="Enter new name">
+        <input type="text" id="updateDescription" placeholder="Enter new description">
+        <button onclick="updateItem()">Update</button>
+    </section>
+
+    <!-- Delete Section -->
+    <section>
+        <h2>Delete Item</h2>
+        <input type="number" id="deleteId" placeholder="Enter item ID">
+        <button onclick="deleteItem()">Delete</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
